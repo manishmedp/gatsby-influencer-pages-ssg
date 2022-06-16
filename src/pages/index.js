@@ -121,9 +121,9 @@ const IndexPage = () => (
 
 export default IndexPage
 
-export const = pageQuery = graphql`
+export const pageQuery = graphql`
       {
-        
+
       }
 
 `

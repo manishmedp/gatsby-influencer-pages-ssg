@@ -23,7 +23,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.2",
     "@mui/material": "^5.8.2",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "prettier": "^2.6.2"
