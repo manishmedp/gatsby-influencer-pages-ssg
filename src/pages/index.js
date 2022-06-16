@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -120,3 +120,10 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const = pageQuery = graphql`
+      {
+        
+      }
+
+`

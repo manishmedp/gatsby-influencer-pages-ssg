@@ -14,10 +14,16 @@
     "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-source-filesystem": "^4.16.0",
     "gatsby-transformer-sharp": "^4.16.0",
+    "gatsby-source-graphcms": "^2.8.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.2",
+    "@mui/material": "^5.8.2",
+    "lodash": "^4.17.21",
   },
   "devDependencies": {
     "prettier": "^2.6.2"
