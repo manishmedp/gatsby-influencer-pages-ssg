@@ -1,0 +1,164 @@
+fragment ScheduledOperation on ScheduledOperation {
+  stage
+  rawPayload
+  errorMessage
+  description
+  publishedAt
+  updatedAt
+  createdAt
+  remoteId: id
+  release {
+    ... on ScheduledRelease {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  status
+  affectedDocuments {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Banner {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on BlogPost {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Breakpoint {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Button {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Company {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Faq {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Feature {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Footer {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Grid {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Hero {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Influencer {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on LogoCloud {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Navigation {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Newsletter {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Page {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Person {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on PopUp {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on PricingPlan {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Seo {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Stat {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Testimonial {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+}

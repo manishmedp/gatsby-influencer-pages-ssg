@@ -1,0 +1,126 @@
+fragment Page on Page {
+  stage
+  locale
+  publishedAt(variation: COMBINED)
+  updatedAt(variation: COMBINED)
+  createdAt(variation: COMBINED)
+  remoteId: id
+  title
+  slug
+  navigationLabel
+  subtitle
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  footerPrimary {
+    ... on Footer {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  footerSecondary {
+    ... on Footer {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  footer {
+    ... on Footer {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  hero {
+    ... on Hero {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  navigation {
+    ... on Navigation {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  scheduledIn {
+    ... on ScheduledOperation {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  blocks {
+    ... on Breakpoint {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Grid {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on LogoCloud {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Testimonial {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+  seo {
+    ... on Seo {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  marketing {
+    ... on Banner {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on Newsletter {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+    ... on PopUp {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+}
